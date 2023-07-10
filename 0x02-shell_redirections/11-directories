@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa | grep "^d" | grep -v "^\./\.\{0,2\}$" | wc -l
+find . -type d -mindepth 1 | wc -l
